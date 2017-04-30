@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.w0279488.quizbuilder.ResultsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ff5bffd4"
+        android:id="@+id/rltvLytTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBigName"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="64sp"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#05a3d7"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ff47e890"
+        android:id="@+id/rltvLytBottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtYourScoreLbl"
+            android:text="@string/strYourScore"
+            android:textSize="24sp"
+            android:layout_marginTop="25dp"
+            android:textColor="#0a7b9e"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtYourScoreLbl"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rltvLytScoreFinal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtYourScoreVal"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#0a7b9e" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtYourScoreMax"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtYourScoreVal"
+                android:textColor="#0a7b9e" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:id="@+id/prgrsBrScore"
+            android:progress="70"
+            android:layout_below="@+id/rltvLytScoreFinal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWellDone"
+            android:text="@string/strStudyHarder"
+            android:layout_above="@+id/btnFinish"
+            android:layout_marginBottom="10dp"
+            android:textSize="50sp"
+            android:textColor="#0a7b9e"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFinish"
+            android:text="@string/strFinish"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="#249824"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:enabled="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

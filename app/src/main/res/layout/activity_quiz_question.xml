@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.w0279488.quizbuilder.QuizQuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ff5bffd4"
+        android:id="@+id/rltvLytTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:textSize="21sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#05a3d7"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtScoreLbl"
+            android:text="@string/strScoreLbl"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#05a3d7"
+            android:layout_toLeftOf="@+id/txtScoreVal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtScoreVal"
+            android:textSize="21sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#05a3d7"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtQuestion"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:scrollbars="vertical"
+            android:maxLines="50"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#05a3d7"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ff47e890"
+        android:id="@+id/rltvLytBottom">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:id="@+id/rdBtnGrpA"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdBtnA1"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:textColor="#0a7b9e"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdBtnA2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:textColor="#0a7b9e"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdBtnA3"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:textColor="#0a7b9e"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdBtnA4"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:textColor="#0a7b9e"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExit"
+            android:text="@string/strExit"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#9b2121"
+            android:textColor="#ffffff"
+            android:textSize="19sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNextQuestion"
+            android:text="@string/strNextQuestion"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="15dp"
+            android:background="#249824"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:enabled="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+An Android app made for a Mobile Application Development class at NSCC. This app is a basic quizzing app with 10 questions, all to do with Android. After each question a toast (popup) shows up to tell you how you did on the question. At the end you get your overall score.

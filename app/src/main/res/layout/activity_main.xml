@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/lnrLytMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff5bffd4"
+        android:id="@+id/rltvLytTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/strQuizlr"
+            android:id="@+id/txtQuizlr"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#059fd7"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff47e890"
+        android:id="@+id/rltvLytBottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:text="@string/strEnterName"
+            android:id="@+id/txtEnterName"
+            android:textColor="#05a3d7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:focusable="false" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTxtName"
+            android:background="#ffffff"
+            android:layout_below="@+id/txtEnterName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="175dip"
+            android:layout_height="50dip"
+            android:text="@string/strBeginQuiz"
+            android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:id="@+id/btnBeginQuiz"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#249824" />
+    </RelativeLayout>
+</LinearLayout>

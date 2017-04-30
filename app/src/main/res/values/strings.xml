@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quizlr</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="strQuizlr">QUIZLR</string>
+    <string name="strBeginQuiz">Begin Quizlating!</string>
+    <string name="strEnterName">Enter a name:</string>
+    <string name="strScoreLbl">Score:</string>
+    <string name="strExit">Exit!</string>
+    <string name="strNextQuestion">Next Question!</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="strFinish">Finish!</string>
+    <string name="strWellDone">Well Done!</string>
+    <string name="strNiceTry">Nice Try!</string>
+    <string name="strPerfect">Perfect!</string>
+    <string name="strStudyHarder">Study Harder!</string>
+    <string name="strYourScore">Your Score:</string>
+    <string name="strX">X</string>
+</resources>
